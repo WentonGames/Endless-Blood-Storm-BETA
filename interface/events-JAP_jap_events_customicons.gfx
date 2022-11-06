@@ -1,0 +1,15 @@
+spriteTypes = { 
+	##Icon For: Китай готовит ответные меры
+	SpriteType = { 
+		name = "JAP_DkiLecsZ-985"
+		texturefile = "gfx/interface/events/jap_events-event/JAP_DkiLecsZ-985.dds"
+	}
+
+	##Icon For: Япония провоцирует Китай
+	SpriteType = { 
+		name = "JAP_TMypkHJs-449"
+		texturefile = "gfx/interface/events/jap_events-event/JAP_TMypkHJs-449.dds"
+	}
+
+ 
+ }

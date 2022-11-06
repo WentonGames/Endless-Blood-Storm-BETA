@@ -1,0 +1,5 @@
+music = {
+	name = "stone_grove"
+	file = "stone_grove.ogg"
+	volume = 0.75
+}

@@ -1,0 +1,12 @@
+﻿l_russian:
+modifiergui_core_localisation_title:0 "Modifier GUI"
+modifiergui_core_localisation_dynamic_modifier_disclaimer:0 "§gОбратите внимание, что ModifierGUI исп. динам. модиф-ры для применения св. эффектов, которые игра проверяет ежедн. Следовательно, §!изменения, внесенные в граф. интерфейс модификатора, применяются только в нач. кажд. дня§g.§!"
+modifiergui_core_localisation_downvar:0 "<"
+modifiergui_core_localisation_upvar:0 ">"
+modifiergui_core_localisation_counter_tooltip:0 "Shift+Click чтобы сбросить модификатор."
+modifiergui_core_localisation_varbutton_tooltip:0 "Click: 1x\nCtrl+Click: 10x\nShift+Click: 100x\nCtrl+Shift+Click: 1000x"
+modifiergui_core_decision_category:0 "ModifierGUI"
+modifiergui_core_decision_category_desc:0 "Запрошен в качестве альтернативного варианта для доступа ModifierGUI.\n\nТакже полезно для отладки. Пожалуйста, скажите мне, что, по крайней мере, это меню отображается, если у вас возникли проблемы с графическим интерфейсом."
+modifiergui_core_decision_open_menu:0 "Открыть ModifierGUI"
+modifiergui_core_decision_close_menu:0 "Закрыть ModifierGUI"
+#ЛОКАЛИЗАЦИЯ ОТ SHASHLIK1337

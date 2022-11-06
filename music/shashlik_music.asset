@@ -1,0 +1,107 @@
+music = {
+	name = "demonsarethegirlsbestfrined"
+	file = "demonsarethegirlsbestfrined.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "incense_iron"
+	file = "incense_iron.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "bismarck"
+	file = "bismarck.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "gott_mit_uns"
+	file = "gott_mit_uns.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "night_of_the_werewolves"
+	file = "night_of_the_werewolves.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "soldier_of_heaven"
+	file = "soldier_of_heaven.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "the_future_of_warfare"
+	file = "the_future_of_warfare.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "the_last_battle"
+	file = "the_last_battle.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "the_red_baron"
+	file = "the_red_baron.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "to_hell_and_back"
+	file = "to_hell_and_back.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "winged_hussars"
+	file = "winged_hussars.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "82nd_all_the_way"
+	file = "82nd_all_the_way.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "blessed_possessed"
+	file = "blessed_possessed.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "gott_mit_uns_swe"
+	file = "gott_mit_uns_swe.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "no_bullets_fly"
+	file = "no_bullets_fly.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "sanctus_dominus"
+	file = "sanctus_dominus.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "shiroyama"
+	file = "shiroyama.ogg"
+	volume = 0.75
+}
+
+music = {
+	name = "white_death"
+	file = "white_death.ogg"
+	volume = 0.75
+}

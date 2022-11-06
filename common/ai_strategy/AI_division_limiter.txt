@@ -1,0 +1,352 @@
+###HoI4 AI Unit Production Limiter###
+### https://gitlab.com/coop-mods/Shared-Resources/tree/master/Scripts%20and%20Code/AI%20Unit%20Limiter
+###------------------------------
+###Originally made by GunnarVonPontius
+###Adapted to variables by Yard1
+###Further modified by IncendiaryBullet
+###------------------------------
+###If your mod adds new unit types, make sure to add them in as well
+
+division_limiter = {
+	enable = {
+		set_temp_variable = {
+			upper_limit = 30
+		}
+		
+		if = {
+			limit = {
+				is_major = no
+				is_subject = no
+				num_of_factories < 40
+				num_of_factories > 9
+			}
+			subtract_from_temp_variable = {
+			upper_limit = 20
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = no
+				is_subject = no
+				num_of_factories > 39
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 6
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = no
+				is_subject = no
+				num_of_factories < 10
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 24
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = no
+				is_subject = yes
+			}
+			subtract_from_temp_variable = {
+			upper_limit = 24
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = yes
+				is_subject = no
+				num_of_factories > 79
+			}
+			add_to_temp_variable = {
+				upper_limit = 90
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = yes
+				is_subject = no
+				num_of_factories < 80
+			}
+			add_to_temp_variable = {
+				upper_limit = 50
+			}
+		}
+		
+		if = {
+			limit = {
+				is_major = yes
+				is_subject = yes
+			}
+			add_to_temp_variable = {
+				upper_limit = 16
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = SOV
+				is_major = yes
+				is_subject = no
+				num_of_controlled_states > 30
+			}
+			add_to_temp_variable = {
+				upper_limit = 70
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = RUS
+				is_major = yes
+				is_subject = no
+				num_of_controlled_states > 30
+			}
+			add_to_temp_variable = {
+				upper_limit = 70
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = GER
+				is_major = yes
+				is_subject = no
+				num_of_controlled_states > 20
+			}
+			add_to_temp_variable = {
+				upper_limit = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = CZE
+				is_subject = no
+				num_of_controlled_states > 6
+			}
+			add_to_temp_variable = {
+				upper_limit = 6
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = USA
+				is_subject = no
+				num_of_controlled_states > 40
+			}
+			add_to_temp_variable = {
+				upper_limit = 30
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = POL
+				is_subject = no
+				num_of_controlled_states > 8
+			}
+			add_to_temp_variable = {
+				upper_limit = 8
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = CHI
+				is_subject = yes
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 200
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = PRC
+				is_subject = yes
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 200
+			}
+		}
+		
+		if = {
+			limit = {
+				num_of_factories > 400
+				num_of_controlled_states > 100
+				is_subject = no
+			}
+			add_to_temp_variable = {
+				upper_limit = 50
+			}
+		}
+		
+		if = {
+			limit = {
+				num_of_factories > 300
+				is_subject = no
+			}
+			add_to_temp_variable = {
+				upper_limit = 20
+			}
+		}
+		
+		if = {
+			limit = {
+				surrender_progress > 50
+			}
+			add_to_temp_variable = {
+				upper_limit = 6
+			}
+		}
+		
+		if = {
+			limit = {
+				has_defensive_war = yes
+			}
+			add_to_temp_variable = {
+				upper_limit = 6
+			}
+		}
+		
+		if = {
+			limit = {
+				has_war_with = GER
+				tag = FRA
+			}
+			add_to_temp_variable = {
+				upper_limit = 12
+			}
+		}
+		
+		if = {
+			limit = {
+				has_capitulated = yes
+				is_major = yes
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 50
+			}
+		}
+		
+		if = {
+			limit = {
+				has_capitulated = yes
+				is_major = no
+			}
+			subtract_from_temp_variable = {
+				upper_limit = 24
+			}
+		}
+		
+		if = {
+			limit = {
+				original_tag = SPR
+				has_civil_war = yes
+			}
+			add_to_temp_variable = {
+				upper_limit = 24
+			}
+		}
+		
+		if = {
+			limit = {
+				has_government = fascism
+			OR = {
+				has_government = communism
+				}
+			}
+			add_to_temp_variable = {
+				upper_limit = 2
+			}
+		}
+		
+		check_variable = {
+			num_divisions > upper_limit
+		}
+	
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = build_army
+		id = cavalry
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = garrison
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = suppression
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = paratroopers
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = mountaineers
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = marines
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = light_armor
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = heavy_armor
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = medium_armor
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = modern_armor
+		value = -300
+	}
+
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -300
+	}
+
+}
+}

@@ -1,0 +1,11 @@
+music_station = "shashlik1337_japan"
+
+music = {
+	song = "stone_grove"	
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}

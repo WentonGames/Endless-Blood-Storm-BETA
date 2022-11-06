@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Строительство дорог
+	SpriteType = { 
+		name = "GFX_idea_JAP__-1428"
+		texturefile = "gfx/interface/ideas/japan-ideas/JAP__-1428.dds"
+	}
+
+ 
+ }

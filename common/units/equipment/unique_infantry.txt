@@ -1,0 +1,32 @@
+# UIE
+
+equipments = {
+
+	# modern weapons  ~1946
+	infantry_equipment_4 = {
+		year = 1946
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 10
+		visual_level = 3
+
+		can_convert_from = { infantry_equipment_3 }
+		
+		#Defensive Abilities
+		defense = 38
+		breakthrough = 7
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 3
+		ap_attack = 12
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 0.79
+		resources = {
+			steel = 4
+		}
+	}
+}

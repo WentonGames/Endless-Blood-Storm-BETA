@@ -1,0 +1,13 @@
+﻿l_russian:
+    steel_factory:"Производство стали"
+    steel_factory_desc:"Завод по выпуску ресурса Стали"
+    rubber_factory:"Производство резины"
+    rubber_factory_desc:"Завод по выпуску ресурса Резины"
+    aluminium_factory:"Производство алюминия"
+    aluminium_factory_desc:"Завод по выпуску ресурса Алюминия"
+    tungsten_factory:"Производство вольфрама"
+    tungsten_factory_desc:"Завод по выпуску ресурса Вольфрама"
+    chromium_factory:"Производство хрома"
+    chromium_factory_desc:"Завод по выпуску ресурса Хрома"
+    oil_factory:"Производство нефти"
+    oil_factory_desc:"Завод по выпуску ресурса Нефти"
